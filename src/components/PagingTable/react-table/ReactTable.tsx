@@ -1395,7 +1395,8 @@ export default class ReactTable extends Component<
               let isPreview;
 
               const onExpanderClick = (e) => {
-                let newExpanded = _.clone(expanded);
+                console.log("Expander clicked");
+                let newExpanded = _.clone({});
                 if (isExpanded) {
                   newExpanded = _.set(newExpanded, cellInfo.nestingPath, false);
                 } else {
